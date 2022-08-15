@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentForm</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="C:\xampp\htdocs\Aditya\Assets\Logo\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\xampp\htdocs\Aditya\Assets\Logo\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\xampp\htdocs\Aditya\Assets\Logo\favicon-16x16.png">
+    <link rel="manifest" href="C:\xampp\htdocs\Aditya\Assets\Logo\site.webmanifest">
+    <link rel="stylesheet" href="C:\xampp\htdocs\Aditya\Style\payment.css">
+</head>
+<body>
+    <div class="container">
+   <form method="post" action="database.php">
+
+       <h1 class="Main_Heading">Ordering Form</h1>
+       <p>Enter Product Code : <input type="text" name="pcode" id="Product_Code" placeholder="LC-001"></p>
+       <h2>Contact Information</h2>
+       <P> Name : <input type="text" name="name" required placeholder="Aditya Purohit"></P>
+       <P>Email : <input type="email" name="email" id="Email" placeholder="Aditya@gmail.com"></P>
+       <p>Mobile No. <input type="number" name="mobile" id="Mobile" required placeholder="1234567890"></p>
+<p><b>Address :</b> </p>
+       <p>Full Address : <textarea name="address" id="Address" cols="30" rows="1" required placeholder="Write ypur Address Here"></textarea>
+       </p>
+     <p>State :
+         <select name="state" id="">
+             <option value="--Select State--">--Select State--</option>
+             <option value="Andhra Pradesh">Andhra Pradesh</option>
+             <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+             </select>
+         <p>Pincode : <input type="number" name="Pincode" id="Pincode" required placeholder="342001"></p> 
+     </p>
+     
+       <!-- <h2>Payment Information</h2>
+       <p>Card Type : 
+            <select name="Card_Type" id="Card_Type" required>
+                <option value="--Select--">--Select--</option>
+                <option value="RuPay">RuPay</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+            </select>
+            <p>Card No. <input type="number" name="Card No." id="Card No." placeholder="XXXX-XXXX-XXXX-XXXX" required></Input:number></p>
+            <p>
+                Expiration Date : <input type="date" name="Exp_Date" id="Exp_Date" required >
+            </p>
+            <p>CVV : <input type="password" name="CVV" id="CVV" required placeholder="Enter Last 3 Digit From Back Of Your Card"></p></p>  -->
+
+            <input type="submit" value="Pay Now">
+    </form> 
+</div>
+</body>
+</html>
