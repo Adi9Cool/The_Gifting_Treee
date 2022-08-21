@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin: 0px;
+    text-align: center;
+    }
+
+header h1 {
+    text-align: center;
+    font-size: 250%;
+    color: rgb(113, 212, 93);
+    /* color:  rgb(187, 112, 14);
+    background-image: url(../assets/home/TheTreee.gif); */
+}
+
+header {
+    /* animation: heading 3s ease-in-out 0s infinite both; */
+    padding: 10px;
+    background-color: rgb(254, 252, 252);
+}
+
+h2{
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(113, 212, 93);
+    overflow: hidden;
+    width:100%;
+    padding: 5px; 
+}
+
+nav a {
+    transition: transform .8s ;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    float: centre;
+    color: white;
+    font-weight: 600;
+}
+nav a:hover,footer a:hover{
+    color: rgb(187, 112, 14);
+}
+
+span{
+    background: linear-gradient(to bottom left, #bb700e 0%, #71d45d 50%);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover{
+    font-style: none;
+    transform: scale(1.2);
+}
+
+.happy-customer {
+    padding: 10px;
+    background-color: rgb(216, 196, 240); 
+}
+
+.founder{
+    padding: 10px;
+    margin: 10px;
+}
+
+.profile-img{
+    border-radius: 50%;
+    box-shadow: 2px 2px 30px rgb(113, 212, 93);
+}
+
+.profile-name{
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+    text-shadow: 2px 2px 5px rgb(113, 212, 93);
+}
+
+.social-handle a{
+    background-color: rgb(125 125 125 / 25%);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration-line:none;
+    font-size: 1em;
+}
+
+.social-handle a:hover{
+    background-color: rgb(30 30 30 / 25%);
+}
+
+.social-handle a i{
+    margin: 10px;
+    padding: 10px;
+}
+
+.fbhandle{
+    color: blue;
+}
+
+.insta{
+    color: #bc2a8d;
+}
+
+.wthandle{
+    color: #21b356;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    transition: transform .8s;
+    padding: 15px; 
+    text-align: center;
+    float: left;
+    color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        height: 250px;
+        width: 250px;
+        margin: 10px;
+    }
+
+    video{
+        height:250px;
+    }
+
+    .social-handle{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* @keyframes heading{
+    0%{
+        background-color: white;
+        color: rgb(113, 212, 93);
+    }
+    100%{
+        background-color: rgb(113, 212, 93);
+        color: white;
+    }
+} */
